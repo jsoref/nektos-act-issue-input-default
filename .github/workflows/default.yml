@@ -1,0 +1,9 @@
+name: test
+on: push
+
+jobs:
+  test-test:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2.0.0
+    - uses: ./

@@ -1,0 +1,16 @@
+name: 'default'
+description: 'echo default'
+author: 'jsoref'
+inputs:
+  has_default:
+    description: 'has'
+    required: false
+    default: '3'
+
+runs:
+  using: 'composite'
+  steps:
+    - id: test-4
+      run: >
+        echo "has: ${{ inputs.has_default }}; hi"
+      shell: bash
